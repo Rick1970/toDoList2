@@ -13,6 +13,11 @@ namespace ToDoList
     {
       app.UseOwin(x => x.UseNancy());
     }
+
+  }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo_test;Integrated Security=SSPI;";
   }
   public class CustomRootPathProvider : IRootPathProvider
   {
